@@ -121,7 +121,7 @@ footer{
     .content{
         width:100%;
         max-width:90%;
-        transform:none;
+        transform:translateY(-80px);
     }
 
     .content h1{
@@ -130,11 +130,11 @@ footer{
     }
 
     .content p{
-        font-size:16px;
+        font-size:18px;
         line-height:1.6;
         max-width:100%;
         text-align:justify;
-        text-align-last:center;
+        text-align-last:justify;
     }
 
     .apply-link{
