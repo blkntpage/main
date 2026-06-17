@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    background:#1E1E1E;
+    color:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+header{
+    height:60px;
+    background:#121212;
+    border-bottom:1px solid #2a2a2a;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 28px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    font-size:30px;
+    font-weight:600;
+    line-height:1;
+}
+
+.about-link{
+    color:#fff;
+    text-decoration:none;
+    font-size:30px;
+    font-weight:600;
+    transition:.2s;
+}
+
+.about-link:hover{
+    color:#bdbdbd;
+}
+
+main{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.content{
+    width:700px;
+    max-width:90%;
+    transform:translateY(-120px);
+}
+
+.content h1{
+    text-align:center;
+    font-size:72px;
+    margin-bottom:28px;
+}
+
+.content p{
+    color:#d0d0d0;
+    font-size:18px;
+    line-height:1.8;
+    text-align:justify;
+    text-align-last:center;
+    margin:0 auto 14px;
+    max-width:475px;
+}
+
+.apply-link{
+    display:block;
+    width:100%;
+    margin-top:50px;
+    text-align:center;
+    color:#fff;
+    text-decoration:underline;
+    text-decoration-thickness:2px;
+    text-underline-offset:8px;
+    font-size:45px;
+    font-weight:600;
+    transition:.2s;
+}
+
+.apply-link:hover{
+    color:#bdbdbd;
+}
+
+footer{
+    background:#121212;
+    border-top:1px solid #2a2a2a;
+    text-align:center;
+    color:#9c9c9c;
+    padding:8px 0;
+    font-size:14px;
+}
+
+@media (max-width:600px){
+
+    header{
+        height:55px;
+        padding:0 16px;
+    }
+
+    .logo{
+        font-size:22px;
+    }
+
+    .about-link{
+        font-size:22px;
+    }
+
+    main{
+        padding:20px 0;
+    }
+
+    .content{
+        width:100%;
+        max-width:90%;
+        transform:none;
+    }
+
+    .content h1{
+        font-size:42px;
+        margin-bottom:22px;
+    }
+
+    .content p{
+        font-size:16px;
+        line-height:1.6;
+        max-width:100%;
+        text-align:justify;
+        text-align-last:center;
+    }
+
+    .apply-link{
+        margin-top:35px;
+        font-size:28px;
+        text-underline-offset:6px;
+    }
+
+    footer{
+        font-size:12px;
+        padding:10px 0;
+    }
+}
+
+@media (max-width:380px){
+
+    .content h1{
+        font-size:34px;
+    }
+
+    .about-link{
+        font-size:18px;
+    }
+
+    .logo{
+        font-size:20px;
+    }
+
+    .apply-link{
+        font-size:24px;
+    }
+}
